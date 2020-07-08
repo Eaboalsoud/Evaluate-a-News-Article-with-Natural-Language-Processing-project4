@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Article</title>
+      
+    </head>
+
+    <body>
+
+        <header>
+            <div class="">
+                Logo
+            </div>
+            <div class="">
+                navigation
+            </div>
+        </header>
+        <main>
+            <section>
+                <form class="" onsubmit="return Client.handleSubmit(event)">
+                    <input id="name" type="text" name="input" value=""  placeholder="Name">
+                    <label for="url">Enter an https:// URL:</label>
+                    <input type="url" name="url" id="url" 
+                    placeholder="https://example.com" pattern="https://.*" size="40" required>
+                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                </form>
+           <br>
+                <strong>Form Results:</strong>
+                <ul id="results">
+                <li>
+                    <h3>polarity: </h3>
+                    <p id="polarity"> </p>
+                </li>
+                <li>
+                    <h3> subjectivity:</h3>
+                    <p id="subjectivity"></p>
+                </li>
+                <li>
+                    <h3> Text:</h3>
+                    <p id="text"></p>
+                </li>
+                
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>This is a footer</p>
+        </footer>
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+    </body>
+</html>
