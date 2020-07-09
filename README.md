@@ -1,4 +1,4 @@
-# [Udacity ](https://udacity.com/)
+# [Udacity ](https://udacity.com/)  Front End Developer Nanodegree Program.
 
 ## Evaluate a news article with Natural Language Processing
 
@@ -13,8 +13,10 @@ We will also use Jest to test our route and other JavaScript functions of our ap
 ### Setup the  project
 
  - Step 1 : you need to install and configure webpack 
-`npm install `.
-`npm i webpack webpack-cli `.
+```
+npm install 
+npm i webpack webpack-cli 
+```
  - Step 2: you need to change all your css file into Sass style 
           and Minify js and styles in the production environment.
  - Step 3:Choose the necessary installation for your development mode
