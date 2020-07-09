@@ -1,4 +1,4 @@
-#[Udacity ](https://udacity.com/)
+# [Udacity ](https://udacity.com/)
 
 ## Evaluate a news article with Natural Language Processing
 
@@ -12,19 +12,21 @@ We will also use Jest to test our route and other JavaScript functions of our ap
 
 ### Setup the  project
 
- ####Step 1 : you need to install and configure webpack 
-`npm install `
-`npm i webpack webpack-cli `
+ - Step 1 : you need to install and configure webpack 
+`npm install `.
+`npm i webpack webpack-cli `.
  - Step 2: you need to change all your css file into Sass style 
           and Minify js and styles in the production environment.
  - Step 3:Choose the necessary installation for your development mode
 
-`npm i -D @babel/core @babel/preset-env babel-loader`
-`npm i -D style-loader node-sass css-loader sass-loader`
-`npm i -D clean-webpack-plugin`
-`npm i -D html-webpack-plugin`
-`npm i -D mini-css-extract-plugin`
-`npm i -D optimize-css-assets-webpack-plugin terser-webpack-plugin`
+```
+npm i -D @babel/core @babel/preset-env babel-loader
+npm i -D style-loader node-sass css-loader sass-loader
+npm i -D clean-webpack-plugin
+npm i -D html-webpack-plugin
+npm i -D mini-css-extract-plugin
+npm i -D optimize-css-assets-webpack-plugin terser-webpack-plugin
+```
 
 - Step 4: Creating layouts and page design
 - Step 5: Add Service workers
@@ -44,13 +46,13 @@ to start the webpack dev start server at port 8080
 
 ` npm run start`
 
-### Configs
+## Configs
 
 Here, we have two webpack config files for both development mode(webpack.config.dev.js) 
 and production mode(webpack.config.prod.js )
 
 We also have a package.json to manage dependencies
- ### Testing
+ ## Testing
  [Jest](https://jestjs.io/en/) is a framework for testing JavaScript projects.
   The Jest framework provides us the ability to create, and run unit tests.
 1-Testing the handleSubmit functionality.
@@ -61,6 +63,6 @@ We also have a package.json to manage dependencies
  `npm run test`
 
 
- ### Offline Functionality
+ ## Offline Functionality
  The project must have set up service workers in webpack.
  test that the site should be available even when you stop your local server .
